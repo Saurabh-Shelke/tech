@@ -183,7 +183,9 @@ app_license = "mit"
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
 # 	"Task": "tech.task.get_dashboard_data"
-# }
+# } 
+
+# Override JobCard doctype with custom class
 
 # exempt linked doctypes from being automatically cancelled
 #
@@ -248,6 +250,6 @@ doc_events = {
 	# 	"before_save": "method",
 	# },
     "BOM": {
-        "before_save": "tech.tech.bom_custom.bom_custom",
+        "on_submit": "tech.tech.bom_custom.bom_custom",
     },
 }
