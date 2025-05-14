@@ -106,7 +106,7 @@ def bom_custom(doc, method):
                         "stock_uom": tpl_item.stock_uom,
                         "conversion_factor": tpl_item.conversion_factor,
                         "rate": qty_rate_map.get(new_code, {}).get("rate", tpl_item.rate),
-                        "has_variants": tpl_item.has_variants,
+                        # "has_variants": tpl_item.has_variants,
                         "include_item_in_manufacturing": tpl_item.include_item_in_manufacturing,
                         "amount": tpl_item.amount,
                         "sourced_by_supplier": tpl_item.sourced_by_supplier,
@@ -165,3 +165,6 @@ def bom_custom(doc, method):
         frappe.msgprint("\n".join(errors), title="Errors in Syncing Variant BOMs")
     else:
         frappe.msgprint("All variant BOMs updated successfully.")
+
+
+

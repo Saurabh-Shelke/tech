@@ -246,10 +246,7 @@ app_license = "mit"
 
 
 doc_events = {
-	# "*": {
-	# 	"before_save": "method",
-	# },
     "BOM": {
-        "on_submit": "tech.tech.bom_custom.bom_custom",
+        "on_submit": "tech.tech.bom_custom.bom_custom"
     },
 }
